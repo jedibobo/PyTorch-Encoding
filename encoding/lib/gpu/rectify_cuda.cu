@@ -9,7 +9,7 @@
 #include <ATen/cuda/detail/TensorInfo.cuh>
 #include <ATen/cuda/detail/IndexUtils.cuh>
 #include <ATen/cuda/detail/KernelUtils.h>
-
+#include <THCNumerics.cuh>
 #include "common.h"
 
 

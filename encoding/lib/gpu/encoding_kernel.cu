@@ -2,7 +2,7 @@
 #include <torch/extension.h>
 #include <ATen/ATen.h>
 #include <ATen/cuda/CUDAContext.h>
-
+#include <THCNumerics.cuh>
 #include "common.h"
 #include "device_tensor.h"
 

@@ -2,7 +2,7 @@
 #include <ATen/ATen.h>
 #include <ATen/cuda/CUDAContext.h>
 #include <vector>
-
+#include <THCNumerics.cuh>
 #include "common.h"
 #include "device_tensor.h"
 

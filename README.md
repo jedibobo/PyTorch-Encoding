@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Docs](https://github.com/zhanghang1989/PyTorch-Encoding/workflows/Build%20Docs/badge.svg)](https://github.com/zhanghang1989/PyTorch-Encoding/actions)
 [![Unit Test](https://github.com/zhanghang1989/PyTorch-Encoding/workflows/Unit%20Test/badge.svg)](https://github.com/zhanghang1989/PyTorch-Encoding/actions)
@@ -53,3 +54,7 @@ month = {July},
 year = {2017}
 }
 ```
+=======
+# PyTorch-Encoding-for-higher-Torchversion
+small modifications from PyTorch-Encoding lib to support torchversion higher than 1.4.0
+>>>>>>> ccc79bcc1261b93b50249cb6528f92c8ab7a673a

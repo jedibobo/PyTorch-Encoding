@@ -1,15 +1,17 @@
+#ifndef TORCH_ENCODING_COMMON_H
+#define TORCH_ENCODING_COMMON_H
 #include <cuda.h>
 #include <cuda_runtime.h>
-
+#include <THCNumerics.cuh>
 static const unsigned WARP_SIZE = 32;
 
 // The maximum number of threads in a block
 static const unsigned MAX_BLOCK_SIZE = 512U;
 
 template<typename In, typename Out>
-struct ScalarConvert {
-  static __host__ __device__ __forceinline__ Out to(const In v) { return (Out) v; }
-};
+struct ScalarConvert; //{
+//   static __host__ __device__ __forceinline__ Out to(const In v) { return (Out) v; }
+// };
 
 // Number of threads in a block given an input size up to MAX_BLOCK_SIZE
 static int getNumThreads(int nElem) {
@@ -222,3 +224,4 @@ __device__ T reduceBN(
   // Everyone picks it up, should be broadcast into the whole gradInput
   return shared[0];
 }
+#endif // COMMON_H
